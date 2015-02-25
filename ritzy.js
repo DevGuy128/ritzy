@@ -19,7 +19,20 @@ var attributes =function(rules){
       throw "Attribute is not rule.";
     }
   }
-}
+};
+var model = function(m,ws,bs,s,t,w,i,a,ld){
+  //Defining properties
+  this.movement = m;
+  this.ballisticSkill = bs;
+  this.weaponSkill = ws;
+  this.strength = s;
+  this.toughness = t;
+  this.wounds = w;
+  this.initiative = i;
+  this.attacks = a;
+  this.leadership = ld;
+  
+};
 $(document).ready(function(){
   var canvasdocument = getElementsByName("canvas");
   if(canvasdocument<1){
@@ -34,5 +47,6 @@ $(document).ready(function(){
     }
     this.attributes = attributes;
     this.name = name;
+    
   };
 });
