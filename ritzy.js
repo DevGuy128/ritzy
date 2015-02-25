@@ -33,12 +33,7 @@ var model = function(m,ws,bs,s,t,w,i,a,ld){
   this.leadership = ld;
   
 };
-$(document).ready(function(){
-  var canvasdocument = getElementsByName("canvas");
-  if(canvasdocument<1){
-    throw "No canvases in document.";
-  }
-  var gameController = function(name,attributes){
+var gameController = function(name,attributes){
     if(typeOf name !== "string"){
       throw "name of gameController not string.";
     }
@@ -47,6 +42,14 @@ $(document).ready(function(){
     }
     this.attributes = attributes;
     this.name = name;
-    
-  };
+};
+var Player = function(name,type){
+  this.name = name;
+  this.type = type;
+};
+$(document).ready(function(){
+  var canvasdocument = getElementsByName("canvas");
+  if(canvasdocument<1){
+    throw "No canvases in document.";
+  }
 });
