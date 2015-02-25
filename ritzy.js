@@ -20,8 +20,12 @@ var attributes =function(rules){
     }
   }
 };
-var model = function(m,ws,bs,s,t,w,i,a,ld){
+
+var model = function(m,ws,bs,s,t,w,i,a,ld,rules){
   //Defining properties
+  if(typeof rules !== array){
+    throw "Rules aren't an array";
+  }
   this.movement = m;
   this.ballisticSkill = bs;
   this.weaponSkill = ws;
