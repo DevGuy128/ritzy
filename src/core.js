@@ -48,3 +48,5 @@ var gameController = function(name,attributes){
     this.attributes = attributes;
     this.name = name;
 };
+
+module.exports = []
