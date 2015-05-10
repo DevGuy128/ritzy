@@ -21,7 +21,7 @@ var attributes =function(rules){
   }
 };
 
-var model = function(m,ws,bs,s,t,w,i,a,ld,rules){
+var model = function(m,ws,bs,s,t,w,i,a,ld,rules,img){
   //Defining properties
   if(typeof rules !== array){
     throw "Rules aren't an array";
@@ -35,7 +35,9 @@ var model = function(m,ws,bs,s,t,w,i,a,ld,rules){
   this.initiative = i;
   this.attacks = a;
   this.leadership = ld;
-  
+  this.img = $.get(img,function(data){
+    this.img = data;
+  });
 };
 var gameController = function(name,attributes){
     if(typeOf name !== "string"){
@@ -58,7 +60,9 @@ var startOfTurn = function(actions){
     }
   }
 };
-var charge = function(){};
+var charge = function(){
+  
+};
 var movementPhase = [];
 $(document).ready(function(){
   var canvasdocument = getElementsByName("canvas");
