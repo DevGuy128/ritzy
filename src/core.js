@@ -1,6 +1,3 @@
-if(typeOf jQuery == "undefined"){
-  throw "jQuery is needed for ritzy to work.";
-}
 var rule = function(description,action,toAffect){
   if(typeof toAffect !== "model"){
     throw "To affect is not a model.";
