@@ -1,22 +1,3 @@
-var rule = function(description,action,toAffect){
-  if(typeof toAffect !== "model"){
-    throw "To affect is not a model.";
-  }
-  if(typeof description !== "string" ){
-    throw "Description is not a string.";
-  }
-  if(typeof action !== "function"){
-    throw "Action is not function.";
-  }
-};
-var attributes =function(rules){
-  for(var i = 0; i>rules.length; i++;){
-    if(typeof rules[i] !== "rule"){
-      throw "Attribute is not rule.";
-    }
-  }
-};
-
 var model = function(m,ws,bs,s,t,w,i,a,ld,rules,img){
   //Defining properties
   if(typeof rules !== array){
