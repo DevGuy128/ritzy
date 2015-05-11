@@ -1,0 +1,13 @@
+{
+  name:"Empire Halberdier",
+  m:5,
+  ws:3,
+  bs:3,
+  s:3,
+  t:3,
+  w:1,
+  i:4,
+  a:1,
+  ld:7,
+  img:"assets/empire_halberdier.jpg"
+}
