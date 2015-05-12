@@ -13,8 +13,6 @@ define(function(){
     this.initiative = i;
     this.attacks = a;
     this.leadership = ld;
-    this.img = $.get(img,function(data){
-      this.img = data;
-    });
+    this.img = getImage(img);
   };
 });
