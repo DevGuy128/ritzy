@@ -1,2 +1,2 @@
 # WHFB
-Ritzy is a JS game engine. It should be finished by 2020.
+WHFB is a simulator of Warhammer Fantasy.
